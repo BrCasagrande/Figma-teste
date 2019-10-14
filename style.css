@@ -1,0 +1,220 @@
+body {
+  font-family: lato;
+  margin: 0;
+}
+
+footer {
+  margin-top: 1em;
+  padding: 5px;
+  background-color: #282828;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+main {
+  margin: 2em 1.5em;
+}
+@media screen and (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    grid-column-gap: 2.5em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  main {
+    padding: 0 8em;
+  }
+}
+
+.text-right {
+  text-align: right;
+  padding-right: 1em;
+}
+
+.text-left {
+  text-align: left;
+  margin-right: 1em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #282828;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+@media screen and (max-height: 450px) {
+  .sidenav .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav .sidenav a {
+    font-size: 18px;
+  }
+}
+.sidenav a {
+  padding: 8px 1.5em 8px 32px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  text-align: right;
+}
+.sidenav a:hover {
+  background-color: #dcdcdc;
+  color: #000;
+}
+.sidenav .btnclose {
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+}
+
+#menu {
+  display: none;
+  max-width: 285px;
+}
+@media screen and (min-width: 1024px) {
+  #menu {
+    margin: 1em 1em 0 0;
+    background-color: #fff;
+    display: flex;
+    padding: 0.5em;
+  }
+  #menu a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 0.5em;
+    border-right: 1px solid #ccc;
+  }
+  #menu a:last-child {
+    border: none;
+  }
+}
+
+.icon-bar {
+  display: inline-block;
+  cursor: pointer;
+  padding: 1em;
+}
+@media screen and (min-width: 1024px) {
+  .icon-bar {
+    display: none;
+  }
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  border-radius: 2px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 20% 60% auto;
+  background-color: #dcdcdc;
+  text-align: center;
+}
+@media screen and (min-height: 1024px) {
+  .grid-3 {
+    grid-template-columns: 20% 70% auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: 10% 55% auto;
+    text-align: left;
+  }
+}
+.grid-3 h2 {
+  margin: 0.75em;
+}
+
+form {
+  padding-bottom: 2em;
+  border-bottom: 2px solid #ccc;
+  border-radius: 3px;
+  text-align: right;
+}
+@media screen and (min-height: 1024px) {
+  form {
+    border: 2px solid #ccc;
+    margin: 1em 0 3em 0;
+    padding: 1em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  form {
+    padding: 2em 1em;
+    border: 2px solid #ccc;
+    max-height: 240px;
+  }
+}
+form h3 {
+  display: none;
+}
+@media screen and (min-height: 1024px) {
+  form h3 {
+    display: block;
+    text-align: center;
+  }
+}
+form .inputs {
+  text-align: left;
+}
+@media screen and (min-height: 1024px) {
+  form .inputs {
+    display: grid;
+    grid-template-columns: 25% 48% 20%;
+    grid-column-gap: 20px;
+  }
+}
+form .campos {
+  display: grid;
+  grid-template-columns: 100%;
+  margin-bottom: 1em;
+}
+form .campos label {
+  margin-bottom: 10px;
+}
+form #btnadd {
+  width: 100%;
+  padding: 5px;
+  color: #fff;
+  background-color: #282828;
+  border: none;
+  border-radius: 3px;
+}
+@media screen and (min-height: 1024px) {
+  form #btnadd {
+    width: 30%;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table td {
+  padding: 10px;
+}
+table thead tr, table tbody tr {
+  border-bottom: 1px solid #8c8c8c;
+}
+table tbody tr:last-child {
+  border-bottom: 4px double #8c8c8c;
+}
+
+/*# sourceMappingURL=style.css.map */

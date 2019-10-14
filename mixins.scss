@@ -1,0 +1,20 @@
+@mixin phone{
+    @media screen and (max-height: 450px) {
+        @content;
+    }
+}
+@mixin ipad{
+    @media screen and (min-height: 1024px) {
+        @content;
+    }
+}
+@mixin ipadH{
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+@mixin pc{
+    @media screen and (min-width: 1280px) {
+        @content;
+    }
+}

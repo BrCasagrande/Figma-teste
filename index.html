@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Figma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="btnclose" onclick="closeNav()">&times;</a>
+            <a href="#" >Resumo</a>
+            <a href="#" >Dashboard</a>
+            <a href="#" >Configurações</a>
+        </nav>
+
+        <div class="grid-3">
+            <div></div> 
+            <h3>Controle Financeiro</h3>
+    
+              <div>
+                  <span onclick="openNav()" class="icon-bar">
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                  </span>
+                  <nav id="menu">
+                    <a href="#" >Resumo</a>
+                    <a href="#" >Dashboard</a>
+                    <a href="#" >Configurações</a>
+                  </nav>
+              </div>
+
+        </div>
+       
+    </header>
+    <main>
+        <form action="post">
+            <h3>Nova transação</h3>
+            <div class="inputs">
+                <div class="campos">
+                    <label>Tipo de transação</label>
+                    <select name="tipo" id="tipo">
+                        <option value="2">Compra</option>
+                        <option value="1">Venda</option>
+                    </select>
+                </div>
+                <div class="campos">
+                    <label>Nome da mercadoria</label>
+                    <input type="text" placeholder="Input" id="nome">
+                </div>
+                <div class="campos">
+                    <label>Valor</label>
+                    <input type="text" placeholder="R$ 0,00" id="valor">
+                </div>
+            </div>
+            <button type="button" id="btnadd">Adicionar transação</button>
+        </form>
+
+        <div>
+            <h3 class="text-center">Extrato de transações</h3>
+            <table>
+               <thead>
+                <tr>
+                    <th></th>
+                    <th class="text-left">Mercadoria</th>
+                    <th class="text-right">Valor</th>
+                </tr>
+               </thead>
+
+                <tbody id="extrato"></tbody>
+
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td><b>Total</b></td>
+                        <td class="text-right">
+                            <b>R$ <span id="total"></span></b>
+                            <br/><small id="lucro">[LUCRO]</small>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+    <footer></footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
